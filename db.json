@@ -1,0 +1,78 @@
+{
+  "tasks": [
+    {
+      "id": "prepareIngredients",
+      "name": "Prepare Ingredients",
+      "start_date": "2024-04-01T08:00:00",
+      "duration": 2,
+      "progress": 100
+    },
+    {
+      "id": "mixIngredients",
+      "name": "Mix Ingredients",
+      "start_date": "2024-04-01T10:00:00",
+      "duration": 1.5,
+      "progress": 70
+    },
+    {
+      "id": "preheatOven",
+      "name": "Preheat Oven",
+      "start_date": "2024-04-01T11:30:00",
+      "duration": 0.5,
+      "progress": 50
+    },
+    {
+      "id": "bakeCookies",
+      "name": "Bake Cookies",
+      "start_date": "2024-04-01T12:00:00",
+      "duration": 2,
+      "progress": 0
+    },
+    {
+      "id": "coolCookies",
+      "name": "Cool Cookies",
+      "start_date": "2024-04-01T14:00:00",
+      "duration": 1,
+      "progress": 0
+    },
+    {
+      "id": "decorateCookies",
+      "name": "Decorate Cookies",
+      "start_date": "2024-04-01T15:00:00",
+      "duration": 1.5,
+      "progress": 0
+    }
+  ],
+  "links": [
+    {
+      "id": "link1",
+      "source": "prepareIngredients",
+      "target": "mixIngredients",
+      "type": "finish_to_start"
+    },
+    {
+      "id": "link2",
+      "source": "mixIngredients",
+      "target": "preheatOven",
+      "type": "finish_to_start"
+    },
+    {
+      "id": "link3",
+      "source": "preheatOven",
+      "target": "bakeCookies",
+      "type": "finish_to_start"
+    },
+    {
+      "id": "link4",
+      "source": "bakeCookies",
+      "target": "coolCookies",
+      "type": "finish_to_start"
+    },
+    {
+      "id": "link5",
+      "source": "coolCookies",
+      "target": "decorateCookies",
+      "type": "finish_to_start"
+    }
+  ]
+}
